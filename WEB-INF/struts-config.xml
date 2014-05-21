@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<!-- 表单 Bean --> 
+  <form-beans>
+  	<form-bean name="pointForm"
+				type="org.map.models.Point" />
+	<form-bean name="userForm"
+				type="org.map.models.User" />
+  </form-beans>
+   <!-- 全局异常 --> 
+  <global-exceptions>
+		<exception key="noSuchMethodException"
+			type="java.lang.NoSuchMethodException" path="/Error.do" />
+  </global-exceptions>
+<!-- 全局转发 -->
+  <global-forwards>
+  	<forward name="global_login" path="/Logon.do" redirect="true"/>
+  	<forward name="global_error" path="/Error.do" redirect="true"/>
+  </global-forwards>
+  <!-- 操作映射 -->
+  <action-mappings>
+   <action 
+		path="/Map" 
+		scope="request"
+		parameter="action" 
+		type="org.map.controllers.MapController">
+			<forward name="admin" path="/admin.jsp" />
+			<forward name="publish" path="/publish.jsp" />
+		</action>
+		
+	<action 
+		name="pointForm"
+		path="/Point" 
+		scope="request"
+		parameter="action" 
+		type="org.map.controllers.PointController">
+			<forward name="admin" path="/admin.jsp" />
+		</action>
+		
+	<action 
+		name="userForm" 
+		path="/User" 
+		scope="request"
+		parameter="action" 
+		type="org.map.controllers.UserController">
+			<forward name="login" path="/Logon.do" />
+		</action>
+	<action path="/Logon" parameter="/login.jsp" type="org.apache.struts.actions.ForwardAction" scope="request" validate="false" />
+	<action path="/Error" parameter="/error.jsp" type="org.apache.struts.actions.ForwardAction" scope="request" validate="false" />
+		
+  </action-mappings>
+  <controller>
+	<set-property property="processorClass"
+	value="org.map.privileges.MapRequestProcessor"/>
+  </controller>
+  <!-- 消息资源 -->
+  <message-resources parameter="org.map.controller.ApplicationResources" />
+</struts-config>
+

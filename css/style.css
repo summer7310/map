@@ -1,0 +1,42 @@
+body{
+	width:980px;
+	height:630px;
+	margin: 0 0 0 -490px;
+	position: relative;
+	left: 50%;
+	background-color:#eeeeee;
+	top:50px;
+}
+.username{
+	height: 20px; 
+	line-height: 20px;
+	margin: 0px; 
+	padding: 0px 0px 0px 20px; 
+	border: 0px none; 
+	font-size: 12px;
+	width: 178px;
+	background-image:url("../img/police_r2_c2.jpg");
+	background-repeat:no-repeat;
+}
+.password{
+	height: 20px; 
+	line-height: 20px;
+	margin: 0px; 
+	padding: 0px 0px 0px 20px; 
+	border: 0px none; 
+	font-size: 12px;
+	width: 178px;
+	background-image:url("../img/police_r4_c2.jpg");
+	background-repeat:no-repeat;
+}
+
+.submitButton{
+	height: 26px; 
+	margin: 0px; 
+	padding: 0px; 
+	width: 67px;
+	border: 0px none; 
+	background-image:url("../img/police_r6_c3.jpg");
+	background-repeat:no-repeat;
+	cursor:pointer;
+}

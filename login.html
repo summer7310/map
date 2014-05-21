@@ -1,0 +1,72 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html:html>
+  <head>
+    <html:base />
+    
+    <title>天津市公安局南开分局电缆光缆管理系统</title>
+	<link type="image/x-icon" href="img/police.ico" rel="icon"/>
+	<link rel="shortcut icon" type="image/ico" href="img/police.ico"/>
+	<style type="text/css">td img {display: block;}</style>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>   
+    <html:form action="/User.do?action=login" method="post">
+    <table border="0" cellpadding="0" cellspacing="0" width="980" style="border:6px solid #ffffff">
+  <tr>
+   <td><img src="img/spacer.gif" width="671" height="1" border="0" alt="" /></td>
+   <td><img src="img/spacer.gif" width="131" height="1" border="0" alt="" /></td>
+   <td><img src="img/spacer.gif" width="67" height="1" border="0" alt="" /></td>
+   <td><img src="img/spacer.gif" width="111" height="1" border="0" alt="" /></td>
+   <td><img src="img/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+  </tr>
+
+  <tr>
+   <td colspan="4"><img name="police_r1_c1" src="img/police_r1_c1.jpg" width="980" height="286" border="0" id="police_r1_c1" alt="" /></td>
+   <td><img src="img/spacer.gif" width="1" height="286" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td rowspan="6"><img name="police_r2_c1" src="img/police_r2_c1.jpg" width="671" height="334" border="0" id="police_r2_c1" alt="" /></td>
+   <td colspan="2">
+  <html:text property="username" styleClass="username"/>
+   </td>
+   <td rowspan="6"><img name="police_r2_c4" src="img/police_r2_c4.jpg" width="111" height="334" border="0" id="police_r2_c4" alt="" /></td>
+   <td><img src="img/spacer.gif" width="1" height="22" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="2"><img name="police_r3_c2" src="img/police_r3_c2.jpg" width="198" height="29" border="0" id="police_r3_c2" alt="" /></td>
+   <td><img src="img/spacer.gif" width="1" height="29" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="2">
+ 	<html:password property="password" styleClass="password"/>
+	</td>
+   <td><img src="img/spacer.gif" width="1" height="22" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="2"><img name="police_r5_c2" src="img/police_r5_c2.jpg" width="198" height="22" border="0" id="police_r5_c2" alt="" /></td>
+   <td><img src="img/spacer.gif" width="1" height="22" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td rowspan="2"><img name="police_r6_c2" src="img/police_r6_c2.jpg" width="131" height="239" border="0" id="police_r6_c2" alt="" /></td>
+   <td>
+	<html:submit styleClass="submitButton" value=" "/>
+   </td>
+   <td><img src="img/spacer.gif" width="1" height="26" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td><img name="police_r7_c3" src="img/police_r7_c3.jpg" width="67" height="213" border="0" id="police_r7_c3" alt="" /></td>
+   <td><img src="img/spacer.gif" width="1" height="213" border="0" alt="" /></td>
+  </tr>
+</table>
+   </html:form>
+  </body>
+</html:html>
